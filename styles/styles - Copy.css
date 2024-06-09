@@ -1,0 +1,139 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f5f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+p {
+            text-align: left; /* Left align paragraphs */
+        }
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.permissions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.permission-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    min-width: 140px;
+    max-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button#connect-wallet-button.disabled {
+    background-color: #ccc; /* Change background color to gray */
+    color: #666; /* Change text color to darker gray */
+    cursor: not-allowed; /* Change cursor to indicate not clickable */
+}
+
+.toast {
+        visibility: hidden;
+        min-width: 250px;
+        background-color: green; /* Background color set to green */
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 10px; /* Adjust as needed */
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.6s, visibility 0.6s;
+    }
+
+    .toast.show {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .toast.success {
+        background-color: #32CD32; /* Green for success */
+    }
+
+    .toast.error {
+        background-color: #FF6347; /* Red for error */
+    }
+
+    .main-content {
+        max-height: 400px; /* Set a max height for the scroll */
+        overflow-y: scroll; /* Add vertical scroll */
+        padding: 10px; /* Add padding to prevent content from sticking to the edges */
+    }
+    #divNote {
+        background-color: #f0f0f0; /* Light gray background color */
+        border-radius: 5px; /* Rounded corners */
+        padding: 20px; /* Add padding for spacing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        margin-bottom: 20px; /* Add margin to separate from other content */
+    }
+    #referrer-info {
+        font-style: italic;
+        color: #888; /* Light grey color */
+        margin-bottom: 10px; /* Add some space below the paragraph */
+    }
+    .logo {
+        margin-bottom: 10px; /* Add margin to reduce the gap between the logo and the paragraph */
+    }
