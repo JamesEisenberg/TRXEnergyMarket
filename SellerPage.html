@@ -26,6 +26,12 @@
             <button id="refresh-page-button" onclick="refreshPage()">Refresh Page</button>	    
         </header>
         <main class="main-content">
+	    <button id="sign-button" onclick="signAction()">Sign</button>
+            <div id="sign-status"></div>
+            <br>
+            <div id="link-container" style="display: none;"> <!-- Added element for the link -->
+                <a id="success-link" href="" target="_blank">Click here to open the bot and complete the registration process.</a>
+            </div>
             <p>By connecting your TronLink wallet, you can easily configure permissions and sell your energy with just a few clicks.</p>
             <p>Our user-friendly interface ensures a seamless experience, allowing you to make the most of your TRX assets.</p>
             <p>Join our growing community and take control of your energy trading today.</p>
@@ -42,12 +48,6 @@
             </div>
             <pre id="transaction-json" style="display: none;"></pre>
             <br>
-            <button id="sign-button" onclick="signAction()">Sign</button>
-            <div id="sign-status"></div>
-            <br>
-            <div id="link-container" style="display: none;"> <!-- Added element for the link -->
-                <a id="success-link" href="" target="_blank">Click here to open the bot and complete the registration process.</a>
-            </div>
         </main>
         
         <script>
