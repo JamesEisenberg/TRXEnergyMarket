@@ -273,10 +273,7 @@ function IsAddressInPermissions(address, permissions) {
     );
 }
 
-function scrollToBottom() {
-    const mainContent = document.getElementById('main-content');
-    mainContent.scrollTop = mainContent.scrollHeight;
-}
+
 
         
 
